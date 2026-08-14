@@ -53,7 +53,7 @@ RUN CHOOSENIM_CHOOSE_VERSION="stable"
 RUN curl https://nim-lang.org/choosenim/init.sh -sSf | sh -s -- -y
 
 # choosenim と nimble の実行パスを環境変数に追加
-ENV PATH="/dev/.nimble/bin:${PATH}"
+ENV PATH="/home/dev/.nimble/bin:${PATH}"
 	
 # vim設定ディレクトリの準備
 RUN curl -fLo /home/dev/.vim/autoload/plug.vim --create-dirs \

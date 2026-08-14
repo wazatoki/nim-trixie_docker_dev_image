@@ -17,3 +17,15 @@ docker exec --user dev -it my_ssh_container /bin/bash
 
 # Connect to a running container via SSH
 ssh dev@localhost -p 2222
+
+# To select the current stable release of Nim
+choosenim stable
+
+# To update to the latest stable release of Nim
+choosenim update stable
+
+# To display which versions are currently installed
+choosenim show
+
+# To select a specific version
+choosenim 2.0.0
